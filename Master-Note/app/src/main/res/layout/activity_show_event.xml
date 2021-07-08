@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateVisible|adjustResize"
+    tools:context=".Card.ActivityShowEvent">
+
+
+
+    <LinearLayout
+        android:background="@color/LightBackGround"
+        android:id="@+id/lnShowEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="17"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+
+        <LinearLayout
+            android:id="@+id/lnTitleTop"
+            android:background="@color/LightSlideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imgCloseEvent"-->
+                <!--                    android:layout_width="40dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:background="@drawable/ic_baseline_close_black"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    app:layout_constraintVertical_bias="0.228" />-->
+
+                <EditText
+                    android:id="@+id/edtNameEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/LightSlideMenu"
+                    android:hint="Name Event"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></EditText>
+
+                <Switch
+                    android:id="@+id/switchNotifyEvent"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_on_notify"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchNotifyEvent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edtDesEvent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@color/LightSlideMenu"
+            android:hint="mô tả" />
+
+        <LinearLayout
+            android:id="@+id/lnChoseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@color/LightSlideMenu"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTime"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_baseline_timer_24" />
+
+            <TextView
+                android:id="@+id/txtStartEvent"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Chọn ngày của sự kiện..."
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgClearDate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_baseline_settings_backup_restore_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnAddFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/LightSlideMenu"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/imgAttachFile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_baseline_attach_file_24" />
+
+            <TextView
+                android:id="@+id/txtAttachFile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="19"
+                android:text="Thêm file"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnAddFileEvent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_baseline_add_24" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@drawable/background_transparent"
+            android:id="@+id/lvAddFileEvent"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:id="@+id/lnAddLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/LightSlideMenu"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/imgAttachLink"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_baseline_link" />
+
+            <TextView
+                android:id="@+id/txtAttachLink"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="19"
+                android:text="Thêm link"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnAddLinkEvent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_baseline_add_24" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@drawable/background_transparent"
+            android:id="@+id/lvAddLinkEvent"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

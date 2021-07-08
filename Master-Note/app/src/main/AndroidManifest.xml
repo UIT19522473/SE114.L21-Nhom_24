@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trelloreal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrelloReal">
+        <activity android:name=".AllCard_Show.activity_All_Card">
+
+        </activity>
+        <activity android:name=".Notify.Test"></activity>
+        <activity android:name=".Notify.activity_Notify" />
+        <activity android:name=".Card.ActivityShowEvent" />
+        <activity android:name=".Card.activity_Card" />
+        <activity android:name=".LoginAndSignUp.activity_login"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.TrelloReal.BaseTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BackGround.ChoseScreenActivity" />
+        <activity android:name=".MainActivity" />
+
+        <receiver android:name=".Notify.Reminder" />
+        <receiver android:name=".Notify.AlarmReceiver" />
+    </application>
+
+</manifest>

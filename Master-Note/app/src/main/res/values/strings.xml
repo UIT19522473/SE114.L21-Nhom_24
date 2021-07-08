@@ -1,0 +1,60 @@
+<resources>
+    <string name="channel_name">notify</string>
+    <string name="channel_description">this is channel</string>
+
+    <string name="app_name">Master-Note</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="my_text">Đăng ký</string>
+    <string name="my_text2">Đăng nhập</string>
+    <string name="ResetPass"><u>Reset mật khẩu</u>.</string>
+
+    <string name="chooseDate"><u>Chọn ngày</u>.</string>
+    <string name="chooseTime"><u>Chọn thời gian</u>.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_text">Reset mật khẩu</string>
+
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+
+
+
+    <string name="material_calendar_monday">T2</string>
+    <string name="material_calendar_tuesday">T3</string>
+    <string name="material_calendar_wednesday">T4</string>
+    <string name="material_calendar_thursday">T5</string>
+    <string name="material_calendar_friday">T6</string>
+    <string name="material_calendar_saturday">T7</string>
+    <string name="material_calendar_sunday">CN</string>
+
+    <array name="material_calendar_months_array">
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </array>
+
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color1">#F44336</color>
+    <color name="color2">#4CAF50</color>
+    <color name="color3">#673AB7</color>
+    <color name="color4">#009688</color>
+    <color name="color5">#FFEB3B</color>
+    <color name="color6">#FF5722</color>
+    <color name="color7">#03A9F4</color>
+    <color name="color8">#3F51B5</color>
+    <color name="color9">#CDDC39</color>
+
+    <color name="color_theme">#00ACC2</color>
+
+    <color name = "DarkBackGround">#2C2D2C</color>
+    <color name = "DarkActionBar">#444546</color>
+    <color name = "DarkSlideMenu">#343536</color>
+
+
+
+    <color name="LightBackGround">#F3F6F5</color>
+    <color name="LightActionBar">#00ACC2</color>
+    <color name="LightSlideMenu">#E1EDE1</color>
+
+
+    <color name="colorSoon">#42D889</color>
+    <color name="colorLate">#FF4500</color>
+</resources>

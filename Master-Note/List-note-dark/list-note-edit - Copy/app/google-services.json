@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "90335341422",
+    "project_id": "list-note-8512d",
+    "storage_bucket": "list-note-8512d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90335341422:android:74dfe515f2605a0ab5ef7f",
+        "android_client_info": {
+          "package_name": "com.example.trelloreal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90335341422-n88iutagu5eenh4hjgvba1d1t5458hdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDToFx1y0a3F8sLxeShJrori_zoAXIYH5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90335341422-n88iutagu5eenh4hjgvba1d1t5458hdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

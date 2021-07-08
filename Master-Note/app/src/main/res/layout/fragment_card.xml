@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/LightBackGround"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutCard"
+    android:layout_height="match_parent"
+    tools:context=".Card.CardFragment">
+
+    <LinearLayout
+        android:background="@drawable/background_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@drawable/background_transparent"
+                android:id="@+id/lvCardFrt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10sp"
+                android:padding="10dp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/lnAddCardFrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FAEDEAEA"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <EditText
+                                android:id="@+id/EditCardFrt"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:paddingTop="10dp"
+                                android:hint="Tên thẻ"
+                                android:textSize="25sp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imgDoneCardFrt"
+                                    android:layout_width="36dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginEnd="24dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/ic_baseline_done_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/imgCloseFrt"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"></ImageView>
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/imgCloseFrt"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:src="@drawable/ic_baseline_close_black"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtAddCardFrt"
+                        android:layout_width="211dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="+ Thêm thẻ"
+                        android:textColor="#309E2D"
+                        android:textSize="30sp" />
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
